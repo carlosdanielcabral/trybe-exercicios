@@ -19,14 +19,31 @@ header{
     text-align: left;
 }
 
+nav{
+    background-color: white;
+    border-radius: 5px;
+    position: sticky;
+    padding-left: 15px;
+    top: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 30px;
+}
+
+nav ul li:hover{
+    background-color: #66553b23;
+}
+
+nav ul li:hover>a{
+    color: #66553b93;
+}
+
 .grid-container{
     display: grid;
     padding: 20px;
-}
-
-.grid-container nav{
-    grid-column-end: 2;
-    height: 170px;
 }
 
 .grid-container main{
@@ -39,17 +56,6 @@ header{
 .grid-container aside{
     grid-column-start: 3;
     grid-column-end: 4;
-}
-
-nav{
-    background-color: white;
-    border-radius: 5px;
-}
-
-nav ul li{
-    list-style: none;
-    padding: 15px 20px;
-    border-bottom: 2px solid #f6f6f6;
 }
 
 .no-line{
@@ -84,11 +90,48 @@ td{
     font-weight: 300;
 }
 
-th, td{
+th, td, tr{
     border: 1px solid #D9CAB3;
     padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.527);
 }
 
 section img{
     width: 400px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.fact h3{
+    padding: 20px 0;
+}
+
+.fact p{
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.bibliographic-references ol,
+.image-references ol{
+    padding: 20px;
+    font-weight: 200;
+}
+
+strong{
+    font-weight: 500;
+}
+.image-references ol li{
+    padding: 5px;
+}
+.aside-title{
+    font-weight: 400;
+    padding: 0 0 20px 0;
+}
+
+footer{
+    background-color: #6D9886;
+    color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
 }
