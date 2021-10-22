@@ -58,6 +58,12 @@
         // Exercício 5
         let textoDaTag = document.querySelector('p').innerText;
         document.querySelector('p').innerText = textoDaTag.toLocaleUpperCase();
+        
+        // Exercício 6
+        let tagsP = document.getElementsByTagName('p');
+        for(let i = 0; i < tagsP.length; i += 1) {
+            console.log(tagsP[i].innerText);
+        }
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
