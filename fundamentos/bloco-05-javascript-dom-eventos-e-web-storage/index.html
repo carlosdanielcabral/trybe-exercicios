@@ -94,6 +94,17 @@
       img.className = "small-image";
       sectionLeft.appendChild(img);
 
+      // Exercício 8
+      let ul = document.createElement('ul');
+      let numeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      
+      for (let i = 0; i < 10; i += 1) {
+        let li = document.createElement('li');
+        li.innerText = numeros[i];
+        ul.appendChild(li);
+      }
+
+      sectionRight.appendChild(ul);
     </script>
   </body>
 </html>
