@@ -10,51 +10,99 @@
 </head>
 
 <body>
-  <form>
-    
-    <fieldset id="personal-data">
-      <label for="name">Nome</label>
-      <input type="text" id="name" name="name" maxlength="40" required />
-  
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" maxlength="50" required />
-  
-      <label for="cpf">CPF</label>
-      <input type="text" id="cpf" name="cpf" maxlength="11" required />
-  
-      <label for="adress">Endereço</label>
-      <input type="text" id="adress" name="adress" maxlength="200" required />
-  
-      <label for="city">Cidade</label>
-      <input type="text" id="city" name="city" maxlength="28" required />
-  
-      <fieldset>
-        <legend>Residência</legend>
-        <label for="house">Casa</label>
-        <input type="radio" id="house" name="residence" value="house" required/>
-  
-        <label for="apartment">Apartamento</label>
-        <input type="radio" id="apartment" name="residence" value="apartment" required/>
-      </fieldset>
-    </fieldset>
-  
-    <fieldset id="last-job-data">
-      <label for="curriculum-summary">Resumo do currículo</label>
-      <textarea id="curriculum-summary" name="curriculum-summary" rows="5" maxlength="1000" required></textarea>
-  
-      <label for="job-title">Cargo</label>
-      <input type="text" id="job-title" name="job-title" required>
-  
-      <label for="job-description">Descrição do cargo</label>
-      <input type="text" id="job-description" name='job-description' maxlength="500" required>
-  
-      <label for="start-date">Data de início</label>
-      <input type="datetime-local" id="start-date" name="start-date" required>
-    </fieldset>
+  <header>
+    <h1>Curriculum</h1>
+  </header>
 
-    <button type="submit" id="submit" name="submit">Enviar</button>
-  </form>
+  <main>
+    <form method="post">
+      <fieldset id="personal-data">
+        <section class="form-line">
+          <section class="flex-display">
+            <section>
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" maxlength="40" required />
+            </section>
+            
+            <section>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" maxlength="50" required />
+            </section>
+
+            <section id="cpf-section">
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" name="cpf" maxlength="11" required />
+            </section>
+          </section> <!-- Fechamento da flex-display -->
+        </section> <!-- Fechamento da form-line-->
+        
+        <section class="form-line">
+          <section class="flex-display">
+            <section>
+              <label for="adress">Endereço</label>
+              <input type="text" id="adress" name="adress" maxlength="200" required />
+            </section>
+        
+            <section>
+              <label for="city">Cidade</label>
+              <input type="text" id="city" name="city" maxlength="28" required />
+            </section>
+    
+            <section>
+              <label for="state">Estado</label>
+              <select id="state" name="state" required>
+                <option id="select-your-state" id="select-your-state" value="select-your-state">-- Select your state</option>
+              </select>
+            </section>
+          </section>
+        </section>
+
+        <section class="form-line">
+          <fieldset>
+            <legend>Residência</legend>
+            <label for="house">Casa</label>
+            <input type="radio" id="house" name="residence" value="house" required/>
+
+            <label for="apartment">Apartamento</label>
+            <input type="radio" id="apartment" name="residence" value="apartment" required/>
+          </fieldset>
+        </section>
+    
+      </fieldset>
+    
+      <fieldset id="last-job-data">
+        <section class="form-line">
+          <label for="curriculum-summary">Resumo do currículo</label>
+          <textarea id="curriculum-summary" name="curriculum-summary" rows="5" maxlength="1000" required></textarea>
+        </section>
+
+        <section class="form-line">
+          <section class="flex-display">
+            <section>
+              <label for="job-title">Cargo</label>
+              <input type="text" id="job-title" name="job-title" required>
+            </section>
   
+            <section>
+              <label for="start-date">Data de início</label>
+              <input type="date" id="start-date" name="start-date" required>
+            </section>
+          </section>
+        </section>
+    
+        <section class="form-line">
+          <label for="job-description">Descrição do cargo</label>
+          <input type="text" id="job-description" name='job-description' maxlength="500" required>
+        </section>
+    
+      </fieldset>
+
+      <section id="buttons-container">
+        <button type="submit" id="submit" name="submit">Enviar</button>
+        <button id="clear">Limpar</button>
+      </section>
+    </form>
+  </main>
   <script src="script.js"></script>
 </body>
 

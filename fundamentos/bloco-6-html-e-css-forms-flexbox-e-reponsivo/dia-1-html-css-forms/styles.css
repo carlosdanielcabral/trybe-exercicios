@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+fieldset {
+    border: 0;
+}
+
+input[type='text'] , input[type='email'] , input[type='date'], select, textarea {
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+
+.flex-display {
+    display: flex;
+}
+
+.flex-display section {
+    padding: 0 20px 20px 0;
+}
+
+.form-line {
+    padding: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+}
