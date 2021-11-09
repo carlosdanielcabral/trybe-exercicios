@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('old-paper.jpg');
+    font-size: 16px;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.445);;
+    background-image: url('alice-wonderland.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(182, 21, 48);
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Fleur De Leah', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding: 15px 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+    color: rgb(247, 247, 247);
+    text-shadow: 5px 2px 5px rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+nav {
+    width: 100%;
+}
+
+.aside-one {
+    height: 100vh;
+    padding: 20px;
+}
+
+.aside-one h2 {
+    padding: 20px 0;
+    font-size: 1.8rem;
+}
+
+.aside-one ul li {
+    padding: 7px 0;
+    font-size: 1.35rem;
+}
+
+.aside-two {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    border-bottom: 2px solid white;
+}
+
+.main-content {
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.main-content h1 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.main-content p {
+    padding: 10px 0;
+    text-indent: 10px;
+}
+
+footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 2px solid white;
+}
+
+footer p {
+    width: 70%;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 620px) {
+    .aside-one {
+        align-items: center;
+        text-align: center;
+    }
+}
+
