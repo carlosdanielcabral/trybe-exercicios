@@ -41,8 +41,13 @@ R. ${order.address.street}, Nº ${order.address.number}, AP: ${order.address.apa
 
 console.log(customerInfo(order));
 
-const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+const orderModifier = order => {
+  order.order.delivery.deliveryPerson = 'Luiz Silva';
+  order.order.delivery.payment = 50,00;
+  const pizza = (Object.keys(order.order.pizza)).join(', ');
+  const bebida = (Object.keys(order.order.drinks)).join(', ');
+  
+  return `Olá ${order.order.delivery.deliveryPerson}, o total do seu pedido de ${pizza} e ${bebida} é R$ ${order.order.delivery.payment}`;
 };
 
-orderModifier(order);
+console.log(orderModifier(order));
