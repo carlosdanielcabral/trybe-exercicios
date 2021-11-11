@@ -37,4 +37,11 @@ const printObjectLength = object => Object.keys(object).length;
 const printObjectValues = object => Object.values(object);
 addNightShift(lesson2, 'turno',  'noite');
 
-console.log(allLessons);
+const totalNumberOfStudents = object => {
+  let total = 0;
+  for (let key in object) {
+    total += object[key].numeroEstudantes; 
+  }
+  return total;
+};
+
