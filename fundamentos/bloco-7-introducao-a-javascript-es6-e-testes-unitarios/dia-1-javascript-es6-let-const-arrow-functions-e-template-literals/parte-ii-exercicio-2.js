@@ -13,5 +13,3 @@ const maiorPalavra = frase => {
 
     return maior;
 }
-
-console.log(maiorPalavra('Olá como está seu ANTONININI'))
