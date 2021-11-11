@@ -26,6 +26,7 @@ const toListKeys = object => Object.keys(object);
 
 const printObjectLength = object => Object.keys(object).length;
 
+const printObjectValues = object => Object.values(object);
+
 addNightShift(lesson2, 'turno',  'noite');
 
-console.log(printObjectLength(lesson1));
