@@ -21,6 +21,7 @@ const lesson3 = {
 const addNightShift = (object, key, value) => {
   object[key] = value;
 };
+ 
+const toListKeys = object => Object.keys(object);
 
 addNightShift(lesson2, 'turno',  'noite');
-console.log(lesson2);
