@@ -24,17 +24,18 @@ const allLessons = {
   lesson3: Object.assign({}, lesson3), 
 };
 
-const addNightShift = (object, key, value) => {
-  object[key] = value;
-};
- 
-addNightShift(lesson2, 'turno',  'noite');
-
 const toListKeys = object => Object.keys(object);
 
 const printObjectLength = object => Object.keys(object).length;
 
+const printKey = (object, position) => Object.keys(object)[position];
+
 const printObjectValues = object => Object.values(object);
+
+const addNightShift = (object, key, value) => {
+  object[key] = value;
+};
+
 addNightShift(lesson2, 'turno',  'noite');
 
 const totalNumberOfStudents = object => {
@@ -43,5 +44,18 @@ const totalNumberOfStudents = object => {
     total += object[key].numeroEstudantes; 
   }
   return total;
+};
+
+const verifyKeyValue = (object, key, value) => {
+  let exists = false;
+  for (let k in object) {
+    if (k === key) {
+      if (object[key] === value) {
+        exists = true;
+      }
+    }
+  }
+
+  return exists;
 };
 
