@@ -150,7 +150,7 @@ describe("6) Função hydrate", () => {
     expect(hydrate("1 copo de catuaba, 1 cervejas e 1 copo de vinho")).toBe(
       "3 copos de água"
     );
-    
+
     expect(hydrate("4 caipirinhas e 2 cervejas")).toBe("6 copos de água");
   });
 });
