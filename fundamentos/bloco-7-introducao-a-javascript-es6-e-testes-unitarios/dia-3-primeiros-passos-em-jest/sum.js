@@ -34,7 +34,8 @@ const encode = (string) => {
   let newString = string;
   for (let chave in encoding) {
     if (newString.includes(chave)) {
-      newString = newString.replace(chave, encoding[chave]);
+      const valor = new RegExp(chave, "g");
+      newString = newString.replace(valor, encoding[chave]);
     }
   }
 
@@ -105,6 +106,8 @@ const hydrate = (string) => {
       : `${coposDeAgua} copo de água`;
   return retorno;
 };
+
+console.log(encode("Sara é bela"));
 
 module.exports = {
   sum,
