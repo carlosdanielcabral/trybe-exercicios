@@ -61,7 +61,15 @@ const books = [
   },
 ];
 
-const everyoneWasBornOnSecXX = () => {
-  const wasBorn = books.every((book) => book.author.birthYear > 1901 && book.author.birthYear < 2001);
-  return wasBorn;
-}
+//expectedResult = false;
+
+const authorUnique = () => {
+  let authorUnique = true;
+  books.forEach((book) => {
+    if (books.some((book2) => book.author.birthYear === book2.author.birthYear)) {
+      authorUnique = false;
+    };
+  });  
+
+  return authorUnique;
+};
