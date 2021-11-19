@@ -65,7 +65,7 @@ const verificarIniciais = (array, numeroDeIniciais) => {
   let retorno = true;
   if (numeroDeIniciais < array.length) {
     for (let i = 0; i < numeroDeIniciais; i += 1) {
-      if (!(array[i].length === 2 && array[i][1] === '.')) {
+      if (!(array[i].endsWith('.'))) {
         retorno = false;
       }
     }
