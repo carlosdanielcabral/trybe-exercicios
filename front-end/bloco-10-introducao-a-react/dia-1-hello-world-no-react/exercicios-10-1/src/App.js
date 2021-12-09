@@ -7,9 +7,11 @@ const Task = (value) => {
   );
 }
 
+const compromissos = ['Ler o conteúdo do course', 'Assistir a aula ao vivo', 'Fazer os exercícios do dia'];
+
 class App extends React.Component {
   render() {
-    return Task("oi");
+    return compromissos.map((compromisso) => Task(compromisso));
   };
 }
 
